@@ -21,6 +21,10 @@ body * {
   letter-spacing: 0.8px;
   font-weight: 400;
 }
+body .hide-desktop {
+  position: relative;
+  display: none;
+}
 body .sidebar-main {
   position: relative;
 }
@@ -375,7 +379,7 @@ header .header-circle-items div img {
   font-size: 12px;
   margin-bottom: 0px;
   color: #222128;
-  font-weight: 500;
+  font-weight: 700;
 }
 .sec-index .first-slider .arrow-plan-tile p {
   font-size: 12px;
@@ -428,11 +432,11 @@ header .header-circle-items div img {
   bottom: -14px;
   background-color: #fff;
   color: #222128;
-  font-size: 14px;
+  font-size: 12px;
   padding: 4px 8px;
   border-radius: 35px;
   border: 1px solid #222128;
-  font-weight: 500;
+  font-weight: 700;
 }
 .sec-index .second-slider .second-slider-card .card-content {
   position: relative;
@@ -806,6 +810,9 @@ header .header-circle-items div img {
   color: #fff;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .hide-desktop {
+    display: block !important;
+  }
   nav {
     padding: 15px 15px;
   }
