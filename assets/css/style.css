@@ -335,17 +335,17 @@ header .header-circle-items div img {
 .sec-index .sec-index-first .top-circle-items div img {
   width: 30px;
 }
-.sec-index .sec-index-first .top-round-text {
+.sec-index .top-round-text {
   position: relative;
 }
-.sec-index .sec-index-first .top-round-text p {
+.sec-index .top-round-text p {
   font-size: 14px;
   margin-bottom: 0px;
 }
-.sec-index .sec-index-first .top-round-text p span {
+.sec-index .top-round-text p span {
   color: #638EA0;
 }
-.sec-index .sec-index-first .top-round-text p img {
+.sec-index .top-round-text p img {
   width: 10px;
   margin-left: 5px;
 }
