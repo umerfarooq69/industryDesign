@@ -27,13 +27,35 @@
     }
 
     nav .nav-main-grid .nav-main-left .nav-items {
+      display: none;
+    }
+
+    nav .nav-items-res {
       position: absolute;
       z-index: 12;
-      background-color: #333;
-      left: 0px;
-      right: 0px;
-      top: 100%;
+      background-color: #fff;
+      right: -0px;
+      top: calc(100% + 25px);
+      width: 250px;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 10px 15px;
+      box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.07);
+      text-align: left;
       display: none;
+
+
+      a {
+        display: block;
+        color: #2a2a2a;
+        background-color: #F2F2F3;
+        margin: 2px 0px;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+      }
     }
 
     nav .nav-main-grid .nav-main-left .nav-search {
@@ -47,14 +69,36 @@
       z-index: 2;
     }
 
-    nav .nav-main-grid .nav-main-right div span {
+    nav .nav-main-grid .nav-main-right> div >span {
       margin-left: 25px;
     }
 
-    nav .nav-main-grid .nav-main-right div .profile-nav img {
+    nav .nav-main-grid .nav-main-right > div .profile-nav>img {
       width: 40px;
       position: relative;
       top: -7px;
+    }
+
+    .nav-noti-main .nav-noti-footer {
+      color: #27A9E1;
+    }
+
+    .nav-drop-parent .dropdown-nav {
+      padding-top: 17px;
+    }
+
+    .nav-drop-parent .dropdown-nav {
+      width: 350px;
+      right: -120px;
+
+      &.change-position-nav {
+        right: -170px;
+      }
+
+      &.change-width {
+        right: -50px;
+        padding-top: 10px;
+      }
     }
 
     nav .nav-main-grid .nav-main-right div .fa-bars {
@@ -70,6 +114,12 @@
       top: -6px;
       outline: none !important;
       box-shadow: 0 0 0 0 !important;
+
+      &:hover{
+        .nav-items-res{
+          display: block;
+        }
+      }
     }
 
     nav .nav-main-grid .nav-main-right div .notification-nav i {
@@ -97,7 +147,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin-top: 0px;
 
-      div {
+      &>div {
         text-align: center;
         display: grid;
         margin-top: 50px;
